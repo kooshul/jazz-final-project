@@ -1,0 +1,471 @@
+/* General Styling  */
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Droid Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: rgb(25,25,25) url(http://wallpapercave.com/wp/Hdh5t8F.png);
+  background-size: cover;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.main {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+label:hover, button:hover {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Navigation Bar Styling */
+input[type="checkbox"] {
+  display: none;
+}
+
+label[for="mobile-menu"] {
+  display: none;
+  cursor: pointer;
+}
+
+nav {
+  padding: 0 20px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 0.75s ease;
+}
+
+nav ul {
+  margin-top: 25px;
+}
+
+nav li {
+  display: inline;
+  padding-left: 20px;
+}
+
+nav li a {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav li a:hover {
+  color: white;
+  background-color: rgba(255, 51, 51, 0.4);
+}
+
+#menu {
+  display: none;
+}
+
+#nav-logo {
+  margin-top: 5px;
+  width: 100px;
+  height: 68px;
+}
+
+/* Subscribe Section Styling */
+.banner {
+  width: 100%;
+  flex-direction: column;
+  padding: 50px 20px 220px;
+  text-align: center;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 3em;
+}
+
+.subscribe {
+  width: 50%;
+  min-width: 350px;
+  padding: 30px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-self: center;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+input[type="email"] {
+  width: 50%;
+  padding: 10px;
+  margin-right: 5px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+button {
+  min-height: 40px;
+  margin: 0;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: white;
+  background-color: #73a9de;
+}
+
+.subscribe p {
+  flex-basis: 100%;
+  margin: 0;
+  padding-top: 10px;
+}
+
+button:hover {
+  background-color: #8cc2f7;
+  cursor: pointer;
+}
+
+#member {
+  font-size: 0.7em;
+  margin-right: 100px;
+}
+
+#signinhere {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Styling for Narrow Screens */
+@media only screen and (max-width: 800px) {
+  /* Navigation Bar Styling (with checkbox hack menu) */
+  nav li {
+    display: none;
+  }
+
+  #menu {
+    display: inline;
+  }
+
+  label[for="mobile-menu"] {
+    display: inline-block;
+    position: absolute;
+    height: 43px;
+    width: 64.33px;
+    top: 13px;
+    right: 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    z-index: 1;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  label[for="mobile-menu"]:hover {
+    background-color: rgba(51, 51, 51, 0.4);
+  }
+
+  input[id="mobile-menu"]:checked ~ label[for="mobile-menu"] {
+    border: 0;
+  }
+
+  input[id="mobile-menu"]:checked ~ label[for="mobile-menu"]:hover {
+    background-color: inherit;
+  }
+
+  input[id="mobile-menu"]:checked ~ label[for="mobile-menu"] .fa-times {
+    font-size: 2.25em;
+    color: black;
+    display: block;
+  }
+
+  input[id="mobile-menu"]:checked ~ nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background-color: #0063a0;
+  }
+
+  input[id="mobile-menu"]:checked ~ nav div {
+    display: block;
+    /*padding-left: 10px;*/
+  }
+
+  input[id="mobile-menu"]:checked ~ nav li {
+    display: block;
+    font-size: 2em;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  input[id="mobile-menu"]:checked ~ nav #sign-in a {
+    border: 0;
+  }
+
+  input[id="mobile-menu"]:checked ~ nav #menu {
+    display: none;
+  }
+
+  input[id="mobile-menu"]:checked ~ .banner,
+  input[id="mobile-menu"]:checked ~ .team-container,
+  input[id="mobile-menu"]:checked ~ footer {
+    height: 0;
+  }
+
+  .subscribe {
+    display: block;
+  }
+
+  input[type="email"] {
+    width: 90%;
+    margin: 5px;
+    padding-top: 10px;
+    font-size: 1em;
+  }
+
+  button {
+    width: 90%;
+    margin: 5px;
+    font-size: 1em;
+  }
+
+  .fa-times {
+    display: none;
+  }
+}
+
+#quiz-body #quiz {
+  padding: 0 20vw;
+  width: 100%;
+}
+
+#quiz-body .image-question,
+#quiz-body .text-question {
+  padding: 5vh 0 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#quiz-body .header {
+  flex-basis: 100%;
+  margin-bottom: 1%;
+  background-color: rgb(175, 150, 0);
+  border-radius: 5px;
+}
+
+#quiz-body .header p {
+  margin: 2.5% 0 2.5% 2.5%;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+#quiz-body .answer {
+  position: relative;
+  width: 32%;
+  margin: 0.5% 0;
+  transition: 0.25s ease-out;
+}
+
+#quiz-body .text-question .answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 19.2vw;
+  font-weight: bold;
+  color: white;
+  background-color: #ff8682;
+}
+
+#quiz-body .answer img {
+  width: 100%;
+  height: auto;
+}
+
+#quiz-body .image-question .answer {
+  background-color: rgba(22, 146, 191, 0.8);
+}
+
+#quiz-body .answer,
+#quiz-body .answer img,
+#quiz-body .answer p {
+  border-radius: 5px;
+}
+
+#quiz-body .image-question .answer p {
+  position: absolute;
+  bottom: 3%;
+  left: 15%;
+  padding: 1.5% 2% 0.5%;
+  border-radius: 5px;
+  font-size: 1.2em;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: white;
+}
+
+#quiz-body .image-question .answer p {
+  position: absolute;
+  bottom: 3%;
+  left: 15%;
+  padding: 1.5% 2% 0.5%;
+  border-radius: 5px;
+  font-size: 1.2em;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: white;
+}
+
+#quiz-body .text-question .answer p {
+  font-size: 2em;
+}
+
+#quiz-body .text-question .answer:hover,
+#quiz-body .image-question .answer:hover img {
+  box-shadow: 0px 0px 3px 8px rgba(255, 255, 0, 0.9);
+  transition: box-shadow 0.2s ease-out;
+}
+
+#quiz-body .image-question i {
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+}
+
+#quiz-body .text-question i {
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+}
+
+#quiz-body #legend i {
+  color: white;
+}
+
+#quiz-body #legend .answer p {
+  color: #333333;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#quiz-body input[type="radio"]:not(:checked) ~ .fa-square-o,
+#quiz-body input[type="radio"]:checked ~ .fa-check-square-o {
+  display: inline-block;
+}
+
+#quiz-body input[type="radio"]:checked ~ .fa-square-o,
+#quiz-body input[type="radio"]:not(:checked) ~ .fa-check-square-o {
+  display: none;
+}
+
+#quiz-body #submit {
+  width: 18vw;
+  min-width: 100px;
+  height: 10vh;
+  margin: 10% 21vw 1%;
+  padding: 2%;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.5em;
+  color: #17b017;
+  background-color: white;
+  transition-duration: 0.5s;
+}
+
+#quiz-body #submit:hover {
+  background-color: #17b017;
+  color: white;
+}
+
+#quiz-body .modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  left: 10vw;
+  top: 5vh;
+  width: 80vw;
+  height: 90vh;
+  padding: 5vh 5vw;
+  background-color: rgba(240, 240, 240, 0.95);
+  transition: opacity 0.5s;
+}
+
+#quiz-body .modal p {
+  font-size: 1.4em;
+}
+
+#quiz-body #player-img {
+  width: 30vw;
+  padding: 1vh 0;
+}
+
+#quiz-body #player-name {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#quiz-body .modal i {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  color: black;
+}
+
+#quiz-body .modal i:hover {
+  cursor: pointer;
+  color: red;
+}
+
+#quiz-body #error {
+  display: none;
+  color: red;
+  width: 18vw;
+  margin: 0 21vw 5%;
+}
+
+@media only screen and (max-width: 800px) {
+  #quiz-body body, #quiz-body button {
+    font-size: 75%;
+  }
+
+  #quiz-body .text-question .answer p {
+    font-size: 50%;
+  }
+
+  #quiz-body .fa-2x, #quiz-body .fa-3x {
+    font-size: 90%;
+  }
+}

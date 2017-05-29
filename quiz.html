@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>History of Jazz</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body id="quiz-body">
+    <div class="main flex-container">
+
+      <input type="checkbox" id="mobile-menu">
+      <label for="mobile-menu"><i class="fa fa-times" aria-hidden="true"></i></label>
+
+      <nav class="flex-container">
+        <div><a href="index.html"><img src="http://www.kwjazzroom.com/wp-content/uploads/2011/04/TheJazzRoom_Black.png" id="nav-logo"/></a></div>
+        <ul>
+          <li><a href="#/">Page 1</a></li>
+          <li><a href="#/">Page 2</a></li>
+          <li><a href="#/">Page 3</a></li>
+          <li><a href="#/">Page 4</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li id="menu"><a href="#/">Menu</a></li>
+        </ul>
+      </nav>
+
+      <div id="quiz">
+        <div class="image-question flex-container" id="instrument">
+          <div class="header">
+            <p>1. Which instrument do you like the most?</p>
+          </div>
+          <label class="answer">
+            <img src="images/trumpet.png" />
+            <input type="radio" name="q1" value="1"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Trumpet</p>
+          </label>
+          <label class="answer">
+            <img src="images/saxophone.png" />
+            <input type="radio" name="q1" value="2"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Saxophone</p>
+          </label>
+          <label class="answer">
+            <img src="images/drums.png" />
+            <input type="radio" name="q1" value="3"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Drums</p>
+          </label>
+          <label class="answer">
+            <img src="images/piano.png" />
+            <input type="radio" name="q1" value="4"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Piano</p>
+          </label>
+          <label class="answer">
+            <img src="images/trombone.png" />
+            <input type="radio" name="q1" value="5"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Trombone</p>
+          </label>
+          <label class="answer">
+            <img src="images/double-bass.png" />
+            <input type="radio" name="q1" value="6"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Double Bass</p>
+          </label>
+        </div>
+
+        <!-- <div class="text-question flex-container" id="position">
+          <div class="header">
+            <p>2. What position do you play?</p>
+          </div>
+          <label class="answer">
+            <input type="radio" name="q2" value="1"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Point Guard</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q2" value="2"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Shooting Guard</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q2" value="3"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Small Forward</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q2" value="4"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Power Forward</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q2" value="5"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Center</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q2" value="6"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Combo Guard<br>Swingman<br>Stretch Four</p>
+          </label>
+        </div>
+
+        <div class="image-question flex-container" id="team">
+          <div class="header">
+            <p>3. What is your favorite team?</p>
+          </div>
+          <label class="answer">
+            <img src="images/cavs.jpg" />
+            <input type="radio" name="q3" value="1"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Cleveland Cavaliers</p>
+          </label>
+          <label class="answer">
+            <img src="images/warriors.jpg" />
+            <input type="radio" name="q3" value="2"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Golden State Warriors</p>
+          </label>
+          <label class="answer">
+            <img src="images/lakers.jpg" />
+            <input type="radio" name="q3" value="3"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Los Angeles Lakers</p>
+          </label>
+          <label class="answer">
+            <img src="images/knicks.jpg" />
+            <input type="radio" name="q3" value="4"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>New York Knicks</p>
+          </label>
+          <label class="answer">
+            <img src="images/celtics.jpg" />
+            <input type="radio" name="q3" value="5"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Boston Celtics</p>
+          </label>
+          <label class="answer">
+            <img src="images/bulls.jpg" />
+            <input type="radio" name="q3" value="6"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Chicago Bulls</p>
+          </label>
+        </div>
+
+        <div class="text-question flex-container" id="role">
+          <div class="header">
+            <p>4. What would be your desired role on a basketball team?</p>
+          </div>
+          <label class="answer">
+            <input type="radio" name="q4" value="1"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Floor General</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q4" value="2"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Sharpshooter</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q4" value="3"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Volume Scorer</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q4" value="4"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Lockdown Defender</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q4" value="5"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Athletic Slasher</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q4" value="6"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Rim Protector</p>
+          </label>
+        </div>
+
+        <div class="image-question flex-container" id="sponsor">
+          <div class="header">
+            <p>5. Which athletic brand would you like to sponsor you?</p>
+          </div>
+          <label class="answer">
+            <img src="images/nike.jpg" />
+            <input type="radio" name="q5" value="1"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Nike</p>
+          </label>
+          <label class="answer">
+            <img src="images/adidas.jpg" />
+            <input type="radio" name="q5" value="2"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Adidas</p>
+          </label>
+          <label class="answer">
+            <img src="images/reebok.png" />
+            <input type="radio" name="q5" value="3"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Reebok</p>
+          </label>
+          <label class="answer">
+            <img src="images/underarmour.jpg" />
+            <input type="radio" name="q5" value="4"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Under Armour</p>
+          </label>
+          <label class="answer">
+            <img src="images/jordan.jpg" />
+            <input type="radio" name="q5" value="5"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Jordan</p>
+          </label>
+          <label class="answer">
+            <img src="images/and1.jpg" />
+            <input type="radio" name="q5" value="6"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>AND1</p>
+          </label>
+        </div>
+
+        <div class="image-question flex-container" id="legend">
+          <div class="header">
+            <p>6. Which retired modern NBA legend is your favorite?</p>
+          </div>
+          <label class="answer">
+            <img src="images/magic.jpg" />
+            <input type="radio" name="q6" value="1"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Magic Johnson</p>
+          </label>
+          <label class="answer">
+            <img src="images/bird.jpg" />
+            <input type="radio" name="q6" value="2"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Larry Bird</p>
+          </label>
+          <label class="answer">
+            <img src="images/shaq.jpg" />
+            <input type="radio" name="q6" value="3"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Shaquille O'Neal</p>
+          </label>
+          <label class="answer">
+            <img src="images/mjordan.jpg" />
+            <input type="radio" name="q6" value="4"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Michael Jordan</p>
+          </label>
+          <label class="answer">
+            <img src="images/kobe.jpg" />
+            <input type="radio" name="q6" value="5"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Kobe Bryant</p>
+          </label>
+          <label class="answer">
+            <img src="images/duncan.jpg" />
+            <input type="radio" name="q6" value="6"/>
+            <i class="fa fa-2x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-check-square-o" aria-hidden="true"></i>
+            <p>Tim Duncan</p>
+          </label>
+        </div>
+
+        <div class="text-question flex-container" id="lategame">
+          <div class="header">
+            <p>7. What are you most likely to do in a tied-up late-game situation?</p>
+          </div>
+          <label class="answer">
+            <input type="radio" name="q7" value="1"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Drive and kick to an open shooter in the corner</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q7" value="2"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Call for a pick and roll with your big man</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q7" value="3"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Go in iso mode and take the pull-up jump shot</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q7" value="4"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Drive and try to finish inside or draw the foul</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q7" value="5"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Post up your defender and fade away for the shot</p>
+          </label>
+          <label class="answer">
+            <input type="radio" name="q7" value="6"/>
+            <i class="fa fa-3x fa-square-o" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-check-square-o" aria-hidden="true"></i>
+            <p>Take a timeout and run a set play from the coach</p>
+          </label>
+        </div> -->
+
+        <button id="submit">See Your Results!</button>
+
+        <div class="modal flex-container">
+          <i class="fa fa-2x fa-window-close" aria-hidden="true"></i>
+          <p>Which Jazz Musician Are You?</p>
+          <p>You Got...</p>
+          <img id="player-img" />
+          <p id="player-name"></p>
+        </div>
+        <p id="error">ERROR: please answer all questions before submitting.</p>
+
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
