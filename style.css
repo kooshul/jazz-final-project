@@ -530,17 +530,51 @@ button:hover {
 }
 
 .video-text {
+  justify-content: space-between;
   width: 100%;
   padding: 20px 105px;
 }
-.video-text iframe {
-  width: 567px;
-  padding-right: 10px;
+.video-text video {
+  width: 435px;
+}
+
+.video-text h4 {
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
 }
 
 .video-text p {
-  width: 567px;
+  width: 625px;
   padding-left: 10px;
   padding-right: 0;
   margin-top: 40px;
+}
+
+.alex-header {
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#alex-video {
+  padding-top: 0;
+  justify-content: space-around;
+}
+
+#shannon-video {
+  width: 420px;
+}
+
+#shannon-text1 {
+  margin-top: 0;
+}
+
+#shannon-header2 {
+  margin-top: 50px;
+}
+
+#shannon-text2 {
+  margin-top: 0;
 }
