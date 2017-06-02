@@ -278,7 +278,7 @@ button:hover {
 
 #quiz-body .header {
   flex-basis: 100%;
-  margin-bottom: 1%;
+  margin-bottom: 7px;
   background-color: rgba(140, 140, 140, 0.8);
   border-radius: 5px;
 }
@@ -510,4 +510,37 @@ button:hover {
 
 #cannonball {
   width: 55%;
+}
+
+.genre-page {
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.genre-page h3 {
+  margin-top: 0;
+  font-style: italic;
+}
+
+.genre-page p {
+  padding: 20px 105px;
+  color: rgb(240,240,240);
+  text-align: justify;
+}
+
+.video-text {
+  width: 100%;
+  padding: 20px 105px;
+}
+.video-text iframe {
+  width: 567px;
+  padding-right: 10px;
+}
+
+.video-text p {
+  width: 567px;
+  padding-left: 10px;
+  padding-right: 0;
+  margin-top: 40px;
 }

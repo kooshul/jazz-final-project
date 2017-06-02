@@ -19,25 +19,59 @@ $('#submit').on('click', function(e) {
   } else {
     $('#error').hide();
 
-    // sum the integer values of the choices
-    var score = 0, player_name, player_img;
+    // count up the occurrences for each genre
+    var one = 0, two = 0, three = 0, four = 0;
     for (var i = 0; i < choices.length; i++) {
-      score += Number(choices[i]);
+      switch(Number(choices[i])) {
+        case 1:
+          one++;
+          break;
+        case 2:
+          two++;
+          break;
+        case 3:
+          three++;
+          break;
+        case 4:
+          four++;
+      }
+    }
+
+    var max = one;
+    var result = "1";
+
+    if (two > max) {
+      result = "2";
+      max = two;
+    }
+
+    if (three > max) {
+      result = "3";
+      max = three;
+    }
+
+    if (four > max) {
+      result = "4";
     }
 
     // different results depending on score
-    if (score < 9) {
-      player_name = "Free Jazz";
-      player_img = "cecil.jpg";
-    } else if (score < 13) {
-      player_name = "New Orleans Brass Bands";
-      player_img = "rebirth.jpg";
-    } else if (score < 17) {
-      player_name = "Latin Jazz";
-      player_img = "titopuente.jpg";
-    } else {
-      player_name = "Soul Jazz";
-      player_img = "eddieharris.jpg";
+    var player_name, player_img;
+    switch(result) {
+      case "1":
+        player_name = "Free Jazz";
+        player_img = "cecil.jpg";
+        break;
+      case "2":
+        player_name = "New Orleans Brass Bands";
+        player_img = "rebirth.jpg";
+        break;
+      case "3":
+        player_name = "Latin Jazz";
+        player_img = "titopuente.jpg";
+        break;
+      case "4":
+        player_name = "Soul Jazz";
+        player_img = "eddieharris.jpg";
     }
 
     // display results in modal
