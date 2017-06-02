@@ -13,13 +13,9 @@ $('#submit').on('click', function(e) {
   }).toArray();
 
   // display error message if quiz is incomplete
-  if (choices.length < 7) {
+  if (choices.length < 5) {
     $('#error').show();
-
-    // http://stackoverflow.com/questions/18334866/jump-to-
-    // the-bottom-of-the-page-with-jquery-without-animation
     $("html, body").animate({ scrollTop: $(document).height() }, "slow");
-
   } else {
     $('#error').hide();
 
@@ -30,24 +26,18 @@ $('#submit').on('click', function(e) {
     }
 
     // different results depending on score
-    if (score < 13) {
-      player_name = "Russell Westbrook";
-      player_img = "westbrook.jpg";
-    } else if (score < 19) {
-      player_name = "Klay Thompson";
-      player_img = "klay.jpg";
-    } else if (score < 25) {
-      player_name = "Kawhi Leonard";
-      player_img = "kawhi.jpg";
-    } else if (score < 31) {
-      player_name = "Lebron James";
-      player_img = "lebron.jpg";
-    } else if (score < 37) {
-      player_name = "James Harden";
-      player_img = "harden.jpg";
+    if (score < 9) {
+      player_name = "Free Jazz";
+      player_img = "cecil.jpg";
+    } else if (score < 13) {
+      player_name = "New Orleans Brass Bands";
+      player_img = "rebirth.jpg";
+    } else if (score < 17) {
+      player_name = "Latin Jazz";
+      player_img = "titopuente.jpg";
     } else {
-      player_name = "Stephen Curry";
-      player_img = "curry.jpg";
+      player_name = "Soul Jazz";
+      player_img = "eddieharris.jpg";
     }
 
     // display results in modal
