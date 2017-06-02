@@ -567,7 +567,8 @@ button:hover {
   width: 420px;
 }
 
-#shannon-text1 {
+#shannon-text1,
+#shannon-text2 {
   margin-top: 0;
 }
 
@@ -575,6 +576,15 @@ button:hover {
   margin-top: 50px;
 }
 
-#shannon-text2 {
-  margin-top: 0;
+#koosh-header1 {
+  margin-top: 10px;
+}
+
+#koosh-text1,
+#koosh-text2 {
+  margin-top: -20px;
+}
+
+#koosh-video {
+  width: 420px;
 }
